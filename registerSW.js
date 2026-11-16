@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/caldo-altina/sw.js', { scope: '/caldo-altina/' })})}

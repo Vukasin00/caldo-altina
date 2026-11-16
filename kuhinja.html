@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="sr" data-tenant="caldo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Portal za kuhinju — Caldo" />
+    <meta name="theme-color" content="#1D2829" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Kuhinja" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/caldo-altina/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/caldo-altina/apple-touch-icon.png" />
+    <!-- The kitchen's own manifest, in the HTML from the start: iOS Safari reads the manifest link when the page loads and
+         ignores a later change by the app, so a dynamically swapped link made "Add to Home Screen" install the customer app. -->
+    <link rel="manifest" href="/caldo-altina/manifest-kuhinja.webmanifest" />
+    <title>Kuhinja · Caldo</title>
+    <style>
+      /* Splash painted before the JS bundle arrives: the kitchen is dark, so the splash is too. */
+      html, body, #root { height: 100%; margin: 0; }
+      body { background: #1D2829; }
+      .splash { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--color-cream-100, #fff); }
+      .splash-name { font-family: var(--font-display, sans-serif); font-weight: var(--display-weight, 400); font-size: calc(40px * var(--display-scale, 1)); letter-spacing: var(--display-tracking, 0.02em); text-transform: var(--display-case, none); }
+      .splash-sub { font: 600 12px -apple-system, BlinkMacSystemFont, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.55; }
+    </style>
+  <style id="tenant-theme">
+ html[data-tenant="caldo"] {
+  --color-cream-50: #FFFFFF;
+  --color-cream-100: #FFF9E8;
+  --color-cream-200: #FBEFCB;
+  --color-cream-300: #F1E1AE;
+  --color-cream-400: #D8C68C;
+  --color-azure-100: #FFF5C2;
+  --color-azure-200: #FFE14D;
+  --color-azure-300: #FFD814;
+  --color-azure-400: #F5C400;
+  --color-on-primary: #2A1B05;
+  --color-forest-950: #121A1B;
+  --color-forest-900: #1D2829;
+  --color-forest-800: #2A3739;
+  --color-forest-700: #3A4749;
+  --color-forest-600: #56625F;
+  --color-forest-500: #75807D;
+  --color-forest-400: #99A29F;
+  --color-flame-100: #FDE2E0;
+  --color-flame-200: #F6A9A4;
+  --color-flame-500: #DC232B;
+  --color-flame-600: #B8141D;
+  --color-flame-700: #8E0F16;
+  --color-tomato-500: #B3261E;
+  --color-tomato-100: #F9DEDC;
+  --color-basil-500: #2E8540;
+  --color-basil-100: #DDF1E1;
+  --color-ink: #1D2526;
+  --color-ink-2: #4D5759;
+  --color-ink-3: #6A7476;
+  --font-display: "Fredoka", "Arial Rounded MT Bold", "Helvetica Neue", Arial, sans-serif;
+  --display-scale: 0.86;
+  --display-tracking: 0;
+  --display-case: none;
+  --display-weight: 700;
+  --motif: radial-gradient(circle, rgba(220, 35, 43, 0.22) 1.6px, transparent 1.7px) 0 0 / 14px 14px, linear-gradient(#FFE11A, #FFE11A);
+  --glass-bg: rgba(255, 249, 232, 0.84);
+ }
+/* self-hosted display font (latin + latin-ext for Serbian diacritics); /caldo-altina/ is filled in by vite.config.ts */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/caldo-altina/fonts/fredoka-700-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/caldo-altina/fonts/fredoka-700-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+    
+    <script type="module" crossorigin src="/caldo-altina/assets/main-DL3ZTnk3.js"></script>
+    <link rel="stylesheet" crossorigin href="/caldo-altina/assets/main-CQ3Fmxgd.css"><script id="vite-plugin-pwa:register-sw" src="/caldo-altina/registerSW.js"></script></head>
+  <body>
+    <div id="root"><div class="splash"><span class="splash-name">KUHINJA</span><span class="splash-sub">Caldo · Učitavanje</span></div></div>
+  </body>
+</html>

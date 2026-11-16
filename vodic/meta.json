@@ -1,0 +1,47 @@
+{
+  "info": {
+    "id": "caldo",
+    "guideKey": "ca-guide-done",
+    "storageKey": "caldo-altina",
+    "fulfillments": [
+      "delivery",
+      "pickup"
+    ],
+    "sizes": 5,
+    "name": "Caldo Altina",
+    "address": "Ugrinovački put 3, Altina, Zemun",
+    "phone": "064 646 8954",
+    "hours": "Non-stop · svaki dan 00 – 24",
+    "instagram": "",
+    "logo": "logo.png",
+    "deliveryFee": 250,
+    "cardPayment": [],
+    "locations": 0,
+    "categories": 5,
+    "menu": "static",
+    "menuItems": 58,
+    "closedToday": false,
+    "soldOutToday": [],
+    "orders": "local",
+    "tenantPath": "caldo",
+    "emulator": false
+  },
+  "style": {
+    "bg": "#FFF9E8",
+    "card": "#FFFFFF",
+    "inset": "#FBEFCB",
+    "line": "#F1E1AE",
+    "primary": "#FFD814",
+    "onPrimary": "#2A1B05",
+    "dark": "#1D2829",
+    "dark2": "#2A3739",
+    "cta": "#DC232B",
+    "ink": "#1D2526",
+    "ink2": "#4D5759",
+    "font": "\"Fredoka\", \"Arial Rounded MT Bold\", \"Helvetica Neue\", Arial, sans-serif",
+    "tracking": "0",
+    "case": "none",
+    "weight": "700",
+    "scale": "0.86"
+  }
+}
